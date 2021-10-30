@@ -1,6 +1,0 @@
-tap "heroku/brew"
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-brew "node"
-brew "rbenv"
