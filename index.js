@@ -1,8 +1,13 @@
-const PORT = 3001
+const PORT = process.env.PORT || 3001
+api.listen(PORT, () => {
+  console.warn(`App listening on http://localhost:${PORT}`)
+})
+
+
 const express = require('express')
 const axios = require('axios')
 const cheerio = require('cheerio')
-const { response } = require('express')
+const { response, application } = require('express')
 const app = express()
 
 const newspapers = [
